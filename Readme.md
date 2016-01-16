@@ -35,7 +35,7 @@ app.use(function *() {
 ### invalidate(moduleId, root)
 
  * `moduleId` - The path to the module as you would write in in a `require`. E.g. `invalidate('./app')`
- * `root` - Optional. If specified, the point at which to stop reloading. As in, only reload parents up to this point in the tree. If not specified, everything up to the root will be reloaded.
+ * `root` - Optional. If specified, the point at which to stop reloading. Defaults to '.' (the calling module).
 
 *Returns:* void
 
